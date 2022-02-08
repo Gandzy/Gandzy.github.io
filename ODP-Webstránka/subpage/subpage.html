@@ -1,0 +1,136 @@
+<style>
+    // Variables
+    $red: #c00;
+
+    // Placeholder selectors
+    %transition {
+        transition: all .25s;
+    }
+
+   
+    
+    .col-3,
+    .col-2 {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .col-3 {
+        width: 280px;
+    }
+
+    .col-2 {
+        width: 49%;
+    }
+
+    @media screen and (max-width: 768px) {
+        .col-3,
+        .col-2 {
+            width: 49%;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .col-3,
+        .col-2 {
+            display: block;
+            margin: auto;
+            width: 80%;
+        }
+    }
+
+    .row h1 {
+        margin: 0;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    button {
+        margin-top: 1em;
+        width: 13em;
+        line-height: 2em;
+        text-transform: uppercase;
+        background: #000;
+        color: #fff;
+        border: 0;
+        outline: 0;
+        @extend %transition;
+        &:focus, &:hover
+
+    {
+        background: lighten(#000, 10%);
+    }
+
+    &:active {
+        background: lighten(#000, 3%);
+    }
+
+    }
+    
+
+    /*Gallery*/
+    .sec-gallery {
+        text-align: center;
+        background: url(http://crossfitdrakkarhondarribia.com/wp-content/uploads/2011/09/crossfit21.jpg) no-repeat center center;
+        //background-size: 100% 100%;
+        background-size: cover;
+        color: #fff;
+    }
+
+    .overlay {
+        background: rgba(0,0,0,.75);
+    }
+
+    .sec-gallery h1:first-of-type {
+        padding: .5em 0;
+        color: #fff;
+    }
+
+    .col-3 img {
+        width: 100%;
+        cursor: pointer;
+        @extend %transition;
+        &:hover
+
+    { 
+        filter: brightness(50%);
+    }
+
+    }
+   
+</style>
+
+</section>
+<section class="sec-gallery">
+    <div class="overlay">
+        <div class="row">
+            <h1>Fitness</h1>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <p =left><img src="http://cdn2.therxreview.com/wp-content/uploads/2013/03/Joshua-Page-4.jpg" alt="" /></p>
+            </div>
+            <div class="col-3">
+                <p align="right"><img src="http://maxshifman.com/wp-content/uploads/2013/11/10770242923_fa8eab2c80_o2.jpg" alt="" /></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <p align="left"><img src="https://3.bp.blogspot.com/-4FRiCbaZH6c/T1u0ckIlPkI/AAAAAAAAAJA/qUE15aneQIc/s1600/crossfit-3.jpg" alt="" /></p>
+            </div>
+            <div class="col-3">
+                <img src="http://www.crossfitfuengirola.com/web2013/wp-content/uploads/crossfit-fuengirola-slide03.jpg" alt="" />
+            </div>
+            <div class="col-3">
+                <p align="right"><img src="http://crossfithi.files.wordpress.com/2013/03/crossfit-games-foucher.jpeg" alt="" /></p>
+            </div>
+        </div>
+        <div class="row">
+            <a href="../ODP-DDM_Juraj_Gancarèík.html">
+                <button type="button" value="Hlavna stránka" role="button">Hlavna stránka</button>
+            </a>
+        </div>
+    </div>
+</section>
+
+</div>
